@@ -1,11 +1,9 @@
 <script>
-    let cardData = {
-        info: "This is the card information. It could be long..."
-    }
+    let { info } = $props();
 </script>
 
 <section class="card-info">
-    <p>{cardData.info}</p>
+    <p>{info}</p>
 </section>
 
 <style>

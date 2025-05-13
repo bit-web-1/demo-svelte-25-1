@@ -2,16 +2,16 @@
   import CardInfo from '$lib/CardInfo.svelte';
   import UserDisplay from './UserDisplay.svelte';
 
-    let cardData = {
-        title: "My Card",
-        }
+    let { cardData } = $props();
+    let user = cardData.user;
+    let info = cardData.info;
 </script>
 
 <div>
     <h2>{cardData.title}</h2>
     <section>
-        <UserDisplay />
-        <CardInfo />
+        <UserDisplay {user} />
+        <CardInfo {info} />
     </section>
 </div>
 

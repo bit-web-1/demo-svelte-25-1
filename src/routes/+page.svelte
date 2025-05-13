@@ -28,7 +28,26 @@
             publication: "",
             citeUrl: "https://www.shutterfly.com/ideas/best-quotes-of-all-time/?msockid=3c99785b330c66ae0c8f6db0323e67db"
         }
-    ];  
+    ];
+
+    let cards = [
+        {
+            title: "My Card",
+            user: {
+                userName: "@doggo",
+                img: "https://picsum.photos/id/237/200/200"
+            },
+            info: "information here"
+        },
+        {
+            title: "My Other Card",
+            user: {
+                userName: "@doggo2",
+                img: "https://picsum.photos/id/237/200/200"
+            },
+            info: "More kinds of information here"
+        }
+    ]
 </script>
 
 <h1>Welcome to SvelteKit</h1>
@@ -39,11 +58,9 @@
 {/each}
 
 <section class="card-grid">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+    {#each cards as card}
+        <Card cardData={card} />
+    {/each}
 </section>
 <Footer />
 
