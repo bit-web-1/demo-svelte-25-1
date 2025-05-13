@@ -1,16 +1,19 @@
 <script>
     let quote = {
-        quoteText: "Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced."
+        quoteText: "Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.",
+        author: "Aldous Huxley",
+        publication: "Brave New World",
+        citeUrl: "https://www.huxley.net/bnw/four.html"
     }
 </script>
 
 <div>
-    <blockquote cite="https://www.huxley.net/bnw/four.html">
+    <blockquote cite={quote.citeUrl}>
       <p>
         {quote.quoteText}
       </p>
     </blockquote>
-    <p>—Aldous Huxley, <cite>Brave New World</cite></p>
+    <p>—{quote.author}, <cite>{quote.publication}</cite></p>
   </div>
 
 <style>
