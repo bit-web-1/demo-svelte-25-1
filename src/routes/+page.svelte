@@ -21,6 +21,12 @@
             author: "Batman",
             publication: "Dark Knight",
             citeUrl: "https://www.huxley.net/bnw/four.html"
+        },
+        {
+            quoteText: "It is hard to fail but it is worse never to have tried to succeed.",
+            author: "Theodore Roosevelt",
+            publication: "",
+            citeUrl: "https://www.shutterfly.com/ideas/best-quotes-of-all-time/?msockid=3c99785b330c66ae0c8f6db0323e67db"
         }
     ];  
 </script>
