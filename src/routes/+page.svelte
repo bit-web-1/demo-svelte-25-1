@@ -1,7 +1,6 @@
 <script>
     import Footer from "$lib/Footer.svelte";
     import Card from "$lib/Card.svelte";
-    import SiteHeader from "$lib/SiteHeader.svelte";
 
     let cards = [
         {
@@ -22,8 +21,6 @@
         }
     ]
 </script>
-
-<SiteHeader />
 
 <section class="card-grid">
     {#each cards as card}

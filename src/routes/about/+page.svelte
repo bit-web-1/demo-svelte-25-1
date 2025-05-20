@@ -1,5 +1,4 @@
 <script>
-    import SiteHeader from "$lib/SiteHeader.svelte";
     import Quote from "$lib/Quote.svelte";
     
     let quotes = [
@@ -30,7 +29,6 @@
     ];
 </script>
 
-<SiteHeader />
 <h2>About us</h2>
 
 {#each quotes as quote}
